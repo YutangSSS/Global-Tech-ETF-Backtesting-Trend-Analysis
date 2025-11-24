@@ -1,56 +1,95 @@
 Global Tech ETF Analysis
 
-This repository contains an ongoing project focused on analyzing long-term trends in several major global technology ETFs. The goal of this project is to get a clearer understanding of how different technology-focused funds have performed over time, and to gradually build a few simple tools for comparison and basic backtesting.
+This repository contains a data analysis project focused on long-term performance trends in major global technology exchange-traded funds (ETFs). The objective is to build a clear, reproducible workflow for retrieving market data, visualizing historical movements, and gradually expanding toward basic portfolio analysis.
 
-The initial version looks at three widely followed ETFs:
+The initial scope includes three widely recognized technology-related ETFs:
 
-QQQ VGT SOXX
+QQQ — Nasdaq-100
 
-These ETFs represent different segments of the technology sector, from broad tech exposure to more concentrated semiconductor holdings.
+VGT — Vanguard Information Technology ETF
 
-Project Purpose
+SOXX — iShares Semiconductor ETF
 
-The purpose of this project is straightforward: to visualize and compare the long-term price movements of different tech ETFs in a clean and simple way. Instead of building anything complex at the beginning, this project starts with the basics—downloading the data, cleaning it, and plotting trends—before expanding into more detailed analysis later on.
+These funds represent different areas within the technology sector, ranging from broad exposure to more concentrated semiconductor holdings.
 
-Current Progress
+1. Project Overview
 
-The current notebook includes:
+The purpose of this project is to examine long-term price behavior of major technology ETFs and provide a simple but structured foundation for further financial analysis.
+The project begins with essential time-series retrieval and visualization and will expand incrementally to include basic backtesting components and performance metrics.
 
-Downloading historical price data using yfinance
+This repository is intended to remain lightweight, cleanly organized, and easy to extend.
 
-Preparing the data for analysis
+2. Current Features
 
-Plotting long-term price trends for QQQ, VGT, and SOXX
+The initial notebook implements the following:
 
-This provides a simple first look at how these ETFs have moved over the past decade.
+Retrieval of historical price data using yfinance
 
-Planned Additions
+Data alignment and preparation for analysis
 
-Over time, this project will gradually include:
+Visualization of long-term price trends for QQQ, VGT, and SOXX
 
-Basic buy-and-hold simulations
+These steps provide a preliminary view of historical performance across different types of technology ETFs.
 
-Monthly investment (DCA) modeling
+3. Planned Enhancements
 
-Performance metrics such as CAGR, volatility, and maximum drawdown
+Future updates will extend the scope of the analysis. Planned components include:
 
-Comparisons with additional ETFs
+Buy-and-hold return simulations
 
-A simple dashboard (if needed later)
+Monthly contribution (DCA) modeling
 
-The plan is to keep the project lightweight and expand step by step.
+Performance metrics:
 
-Tools Used
+CAGR
 
-Python, Google Colab, pandas, yfinance, matplotlib and Notebook
+Volatility
 
-Main notebook:
+Maximum drawdown
+
+Basic risk-adjusted comparisons
+
+Inclusion of additional ETFs for broader comparison
+
+Optional interactive dashboard for displaying results
+
+Each addition will be implemented gradually to maintain clarity and readability.
+
+4. Project Structure
+Global-Tech-ETF-Backtesting-Trend-Analysis/
+│
+├── Global_Tech_ETF_Analysis.ipynb     # Main analysis notebook
+└── README.md                          # Project documentation
+
+
+The structure is intentionally simple at this stage and will be updated as analysis becomes more detailed.
+
+5. Tools and Libraries
+
+Python
+
+Google Colab
+
+pandas
+
+yfinance
+
+matplotlib
+
+These tools were selected to keep the workflow accessible and reproducible without complex environment setup.
+
+6. Notebook
+
+Main analysis notebook:
 Global_Tech_ETF_Analysis.ipynb
 
-Notes
+The notebook currently focuses on data retrieval and long-term trend visualization. Future iterations will incorporate backtesting and extended metrics.
 
-This project is still in progress and will be updated as more analysis is added. The aim is to keep it readable, simple, and practical.
+7. Notes
 
-Author
+This project is a work in progress.
+Updates will be added progressively as new features are developed and tested.
+
+8. Author
 
 Jacqueline Song
